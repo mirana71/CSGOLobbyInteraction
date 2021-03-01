@@ -10,7 +10,7 @@ namespace GameCoordinator
             if (callback == null)
                 return;
 
-            Console.WriteLine("OnGCMessage code : {0}", callback.EMsg));
+            Console.WriteLine("OnGCMessage code : {0}", callback.EMsg))
 
             var messageMap = new Dictionary<uint, Action<IPacketGCMsg>>
             {
