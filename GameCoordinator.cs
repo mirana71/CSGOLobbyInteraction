@@ -10,7 +10,7 @@ namespace GameCoordinator
             if (callback == null)
                 return;
 
-            Console.WriteLine(string.Format("OnGCMessage code : {0}", callback.EMsg));
+            Console.WriteLine("OnGCMessage code : {0}", callback.EMsg));
 
             var messageMap = new Dictionary<uint, Action<IPacketGCMsg>>
             {
@@ -24,7 +24,7 @@ namespace GameCoordinator
         {
             var msg = new ClientGCMsgProtobuf<CMsgClientWelcome>(packetMsg);
 
-            form.AddLog(String.Format("MM welcomes us. Your current location: {0}", msg.Body.location.country));
+            Console.WriteLine($"MM welcomes us. Your current location: {0}", msg.Body.location.country));
 
             var getUser = new ClientGCMsgProtobuf<CMsgStoreGetUserData>((uint)EGCItemMsg.k_EMsgGCStoreGetUserData);
             getUser.Body.currency = 2;
