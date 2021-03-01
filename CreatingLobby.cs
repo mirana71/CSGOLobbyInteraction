@@ -14,7 +14,7 @@ using SteamKit2.GC.CSGO.Internal;
             createlobbyRequest.Body.lobby_flags = 1;
             createlobbyRequest.Body.cell_id = cellId;
             createlobbyRequest.Body.persona_name_owner = Friends.GetPersonaName();
-            Client.Send(createRequest);
+            Client.Send(createlobbyRequest);
 
             Console.WriteLine("Created a lobby with 10 slots!");
         }
