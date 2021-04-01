@@ -9,3 +9,4 @@ NOW YOU CANNOT JOIN THE LOBBY WITHOUT AN INVITATION!
 -
 
 It is no longer possible to join the lobby without an invitation.
+
